@@ -7,7 +7,7 @@ from flask import Flask
 application = Flask(__name__)
 
 @application.route("/")
-def hello()
+def hello(
 
 
 #configuration = kubernetes.client.Configuration()
@@ -26,6 +26,7 @@ def hello()
       pprint( api_response.data)
   except ApiException as e:
       pprint("Exception when calling CoreV1Api->read_namespaced_config_map: %s\n" % e)
+)
  
   if __name__ == "__main__":
       application.run()
