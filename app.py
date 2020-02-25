@@ -15,7 +15,7 @@ def hello(
 #config.load_kube_config()
 
   api_instance = client.CoreV1Api()
-  name = "licence" # str | name of the ConfigMap
+  name = 'licence' # str | name of the ConfigMap
   namespace = 'default' # str | object name and auth scope, such as for teams and projects
   pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
   exact = True # bool | Should the export be exact.  Exact export maintains cluster-specific fields like 'Namespace'. Deprecated. Planned for removal in 1.18. (optional)
