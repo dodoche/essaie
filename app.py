@@ -6,7 +6,7 @@ from kubernetes import client, config
 
 #configuration = kubernetes.client.Configuration()
 
-config.load_kube_config()
+#config.load_kube_config()
 
 api_instance = client.CoreV1Api()
 name = "licence" # str | name of the ConfigMap
