@@ -22,12 +22,7 @@ def apptest():
 
     try:
         api_response = api_instance.read_namespaced_config_map(name, namespace, pretty=pretty, exact=exact, export=export)
-        pprint( api_response.data)
+        return  api_response.data
     except ApiException as e:
         pprint("Exception when calling CoreV1Api->read_namespaced_config_map: %s\n" % e)
       
-   
-   
- 
- if __name__ == "__main__":
-      application.run()
