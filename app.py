@@ -7,8 +7,6 @@ from flask import Flask
 application = Flask(__name__)
 
 @application.route("/")
-def create_app()
-
 
 #configuration = kubernetes.client.Configuration()
 
