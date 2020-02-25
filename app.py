@@ -2,8 +2,9 @@ from kubernetes.client.rest import ApiException
 from pprint import pprint
 
 from kubernetes import client, config
-from kubernetes.client.rest import ApiException
-configuration = kubernetes.client.Configuration()
+
+
+#configuration = kubernetes.client.Configuration()
 
 config.load_kube_config()
 
