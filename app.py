@@ -23,4 +23,4 @@ def hello():
     return (api_response.data)
 
 if __name__ == "__main__":
-    app.run(host='192.168.99.100',port=80)
+    app.run(host='0.0.0.0',port=80)
