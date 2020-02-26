@@ -5,8 +5,13 @@ from kubernetes import client, config
 app = Flask(__name__)
 
 
-@app.route("/hello")
-def hello():
+@app.route("/ing")
+def ing():
+    # Configure API key authorization: BearerToken
+    configuration = kubernetes.client.Configuration()
+    configuration.api_key['authorization'] = '5h8FzmDxBpPtKpqZ9XfiKLEuMgh-9pxrHPeEyx0rfZs'
+    # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+    configuration.api_key_prefix['authorization'] = 'Bearer
     
     api_instance = client.CoreV1Api()
     name = 'elastic-licensing' # str | name of the ConfigMap
