@@ -23,4 +23,4 @@ def hello():
     return (api_response.data)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0',post=8000)
